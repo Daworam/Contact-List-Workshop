@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import ContactNames from './contactNames'
 import ContactEmail from './contactEmail'
+import ContactPhone from './contactPhone'
 
 function App() {
   const [contactList, setContactList] = useState([]);
@@ -16,13 +17,14 @@ function App() {
     getContactList()
   }, [])
 
-  console.log(contactList)
-
   return (
     <>
      <h1>Contact List</h1>
-     <ContactNames contactList = {contactList}/>
-     <ContactEmail contactList = {contactList} />
+     <section>
+      <ContactNames contactList = {contactList}/>
+      <ContactEmail contactList = {contactList}/>
+      <ContactPhone contactList = {contactList}/>
+     </section>
     </>
   )
 }
