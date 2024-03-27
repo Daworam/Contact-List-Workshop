@@ -20,11 +20,20 @@ function App() {
   return (
     <>
      <h1>Contact List</h1>
-     <section>
-      <ContactNames contactList = {contactList}/>
-      <ContactEmail contactList = {contactList}/>
-      <ContactPhone contactList = {contactList}/>
-     </section>
+      <section>
+        <section class="info">
+          <h3>Name</h3>
+          <ContactNames contactList = {contactList}/>
+        </section>
+        <section class="info">
+          <h3>Email Address</h3>
+          <ContactEmail contactList = {contactList}/>
+        </section>
+        <section class="info">
+          <h3>Phone Number</h3>
+          <ContactPhone contactList = {contactList}/>
+        </section>
+      </section>
     </>
   )
 }
