@@ -25,6 +25,7 @@ function App() {
         <SingleContact
           contactList={contactList}
           contactId={selectedContactId}
+          setSelectedContactId={setSelectedContactId}
         />
       ) : (
         <>
