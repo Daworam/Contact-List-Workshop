@@ -23,3 +23,11 @@ h1 {
 .singleData > ul {
   list-style: none;
 }
+
+.emailLi {
+  list-style: none;
+}
+
+.phoneLi {
+  list-style: none;
+}

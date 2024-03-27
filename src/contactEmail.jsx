@@ -2,7 +2,7 @@ const ContactEmail = ({ contactList }) => {
   return (
     <ul>
       {contactList.map((singleContact) => {
-        return <li key={singleContact.id}>{singleContact.email}</li>;
+        return <li className="emailLi" key={singleContact.id}>{singleContact.email}</li>;
       })}
     </ul>
   );
